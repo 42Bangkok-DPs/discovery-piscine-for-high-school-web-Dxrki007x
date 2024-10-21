@@ -1,0 +1,20 @@
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width:49% ;
+  padding: 10px;
+  height: 300px;
+  align-items: center;
+  gap: 2px;
+}
+
+.row{
+    gap: 3px;
+}
+
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
